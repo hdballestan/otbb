@@ -7,7 +7,7 @@ layout: default
     <h3 class="fw-bold border-bottom pb-3 mb-5">{{ page.title }}</h3>
     {{ content }}
     {% for post in site.posts %}
-      <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+      <p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
     {% endfor %}
   </div>
 </div>
