@@ -1,0 +1,4 @@
+---
+layout: foundation
+title: "Foundation"
+---

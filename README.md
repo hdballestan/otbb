@@ -54,9 +54,9 @@ The `_layouts/home.html` layout defines the home page for this theme. An introdu
 
 The `_layouts/people.html` layout can be used to showcase and describe people in your research group. People are defined in the `_data/settings.yml` file, and markdown pages for each person with the `_layouts/page.html` layout can be placed in the `people` directory.
 
-#### Publications
+#### Foundation
 
-The `_layouts/publications.html` layout can be used to showcase selected publications, or the entire catalogue of publications. Direct links to the paper can be used, or a PDF copy of the paper can be served. Publications are defined in the `_data/publications.yml` file, and any PDF files that are served can be placed in the `publications` directory.
+The `_layouts/foundation.html` layout can be used to showcase selected publications, or the entire catalogue of publications. Direct links to the paper can be used, or a PDF copy of the paper can be served. Publications are defined in the `_data/foundation.yml` file, and any PDF files that are served can be placed in the `foundation` directory.
 
 #### Courses
 
