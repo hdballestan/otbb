@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Create home.html layout [#4](https://github.com/LeNPaul/academic/issues/4)
 - Create page.html layout [#5](https://github.com/LeNPaul/academic/issues/5)
 - Create people.html layout [#6](https://github.com/LeNPaul/academic/issues/6)
-- Create publications.html layout [#7](https://github.com/LeNPaul/academic/issues/7)
+- Create foundation.html layout [#7](https://github.com/LeNPaul/academic/issues/7)
 - Create post.html layout [#8](https://github.com/LeNPaul/academic/issues/8)
 - Create cv.html layout [#9](https://github.com/LeNPaul/academic/issues/9)
 - Create contact.html layout [#10](https://github.com/LeNPaul/academic/issues/10)

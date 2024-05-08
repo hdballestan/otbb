@@ -1,0 +1,9 @@
+<div class="row g-5 mb-5">
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Foundation</h3>
+    <p class="text-justify">This is some of the bibliography we believe is worth reviewing to understand some of the problems encountered in the "academy".</p>
+    {% for item in site.data.foundation.index %}
+      <p><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></p>
+    {% endfor %}
+  </div>
+</div>

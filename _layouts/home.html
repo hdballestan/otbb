@@ -2,15 +2,59 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h3 class="fw-bold">Research</h3>
-    {{ content }}
-  </div>
-  <div class="col-md-6">
-    <img src="{{ site.url }}/assets/img/home.jpg" alt="Home" width="100%">
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OTBB</title>
+    <style>
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .background-image {
+            background-image: url('{{ site.url }}/assets/img/home.jpg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: inherit; 
+            opacity: 0.6; 
+        }
+
+        .footnote {
+            margin-top: 20px;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="background-image"></div>
+  <h3 class="fw-bold text-center">Welcome!</h3>
+  <p class="text-justify">Welcome to OTBB. This project is designed to provide anyone, anywhere <a href="#footnote">☩</a>, with a space to express their outrage and, through it, to help others. How many times have you come across a scientific article, book, blog, etc., that showed research you found very interesting but <strong>NOT how they arrived at it</strong>?</p>
+
+  <p class="text-justify">This is quite annoying to me because if 10 people around the world are researching the same topic, it's likely that all 10 of them will have to take a pencil and paper and re-do the equations step by step, or use a computer to re-do a program that achieves the same results (if that's even possible, I don't trust peer review 100%).</p>
+
+  <p class="text-justify">So, I got tired and I want to help in some way in this first project that will evolve later without losing what is done. People are invited to share their discoveries by properly citing the sources (articles...) with a brief introduction and their findings, as well as links to their own repositories so that others who need them can receive help and receive public feedback through the community.</p>
+
+  <p class="text-justify">The ultimate idea is to have a community actively discussing research topics without being tied to journals and books that are often unaffordable or to institutions that do not endorse researching topics that do not generate profits, a science for everyone.</p>
 </div>
 
-{% include publications.html %}
+<footer class="footnote" id="footnote">
+  <p><a href="#footnote">☩</a> (We understand that not everyone has the means such as a computer and there is still much to be done.)</p>
+</footer>
 
+</body>
+</html>

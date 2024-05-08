@@ -1,7 +1,7 @@
 menu:
 - {name: 'posts', url: '/posts'}
 - {name: 'people', url: '/people'}
-- {name: 'publications', url: '/publications'}
+- {name: 'foundation', url: '/foundation'}
 - {name: 'courses', url: '/courses'}
 - {name: 'contact', url: '/contact'}
 - {name: 'cv', url: '/cv'}
