@@ -1,10 +1,10 @@
 menu:
 - {name: 'posts', url: '/posts'}
-- {name: 'people', url: '/people'}
+# - {name: 'people', url: '/people'}
 - {name: 'foundation', url: '/foundation'}
 - {name: 'courses', url: '/courses'}
 - {name: 'contact', url: '/contact'}
-- {name: 'cv', url: '/cv'}
+# - {name: 'cv', url: '/cv'}
 
 people:
 - {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
@@ -12,7 +12,7 @@ people:
 - {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
 
 courses:
-- {name: 'Vector Calculus', url: 'vector-calculus'}
+- {name: 'Newtonian mechanics', url: 'newtonian-mechanics'}
 - {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 

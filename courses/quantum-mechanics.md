@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Quantum Mechanics"
+title: "Quantum Perros"
 ---
 
 #### Course Information
