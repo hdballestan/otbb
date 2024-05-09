@@ -7,8 +7,10 @@ layout: default
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Courses</h3>
-    {% for course in site.data.settings.courses %}
-      <p><a href="{{ site.url }}/courses/{{ course.url}}">{{ course.name }}</a></p>
-    {% endfor %}
+    {% assign first_course = site.data.settings.courses | first %}
+    <p><a href="{{ site.url }}/courses/{{ first_course.url }}">{{ first_course.name }}</a></p>
+    <!-- {% for course in site.data.settings.courses %} -->
+    <!--   <p><a href="{{ site.url }}/courses/{{ course.url }}">{{ course.name }}</a></p> -->
+    <!-- {% endfor %} -->
   </div>
 </div>
