@@ -10,6 +10,9 @@ github_username:  hdballestan
 # Build settings
 theme: academic-jekyll-theme
 
+include:
+  - "images"
+
 plugins:
   - jekyll-feed
 
