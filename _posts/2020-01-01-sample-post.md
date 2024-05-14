@@ -3,17 +3,39 @@ layout: post
 title: "Statistical mechanics of money, wealth, and income"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat quam vel augue sollicitudin mollis in quis lorem. Nunc congue risus id lorem accumsan malesuada. Quisque odio velit, faucibus ac urna id, tristique scelerisque elit. Morbi tempor interdum ligula, gravida sagittis purus aliquam non. Vivamus vulputate risus orci, eu dictum lectus consectetur sed. Maecenas tempus ligula eget faucibus tincidunt. Donec imperdiet ut diam nec fermentum. Donec finibus quis orci vitae iaculis. Fusce sed est est. Vivamus augue ligula, lobortis in felis et, gravida tincidunt tellus. Maecenas volutpat ultricies ornare. Aliquam fringilla ex dictum maximus aliquet. Sed et scelerisque diam, quis semper sapien. Maecenas ut ante nunc. Cras in turpis ut orci dignissim facilisis ac eget est. Vestibulum et congue arcu.
+# Dragulescu and Yakovenko model
+
+
+This model considers a closed economic system based on $N$ agents that exchange one or more monetary units with each other \[[1](#bibliography)\]. The exchange consists of a 'losing' agent gives an amount $\Delta M$ (of money for instance) to the winner, if the winner is the agent $m_{j}$, he will have $m_{j} + \Delta m$ and agent $i$ will be left with money $m_{i} - \Delta m$ so it is a conserved system.
 
 $$
-\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+\begin{eqnarray}
+\left[m_{i}, m_{j}\right] \rightarrow \left[m_{i}^{'}, m_{j}^{'}\right] &=& \left[m_{i} - \Delta m, m_{j} + \Delta m\right]\\
+m_{i} + m_{j} &=& m_{i}^{'} + m_{j}^{'}
+\end{eqnarray}
 $$
 
+The system then consists of $N$ agents competing for portions of the total "_money_" of the system $M$. Initially all agents have the same amount of money and therefore The shape of the distribution corresponds to a delta function \[[1](#bibliography)\]:
 
-Donec congue sit amet ligula ut pulvinar. Cras justo urna, congue a elit vel, convallis dictum risus. Sed sed diam interdum, laoreet neque vel, fermentum nisi. Maecenas at nisl purus. Fusce non justo libero. Nam at mauris gravida, interdum massa in, sollicitudin ante. Sed vulputate, augue at facilisis elementum, nunc quam pharetra nibh, sed pretium eros neque facilisis lorem. Cras aliquet leo a tortor molestie, at consectetur ex consectetur. Nullam quis arcu tempus, ornare massa vel, mattis est. Curabitur mattis nulla nec lectus tristique, ac viverra nulla porta. Mauris elementum pretium est, eu ornare lorem scelerisque a. Morbi porta semper ligula eget molestie. Nunc sed faucibus elit. Suspendisse non tempus quam. Vestibulum egestas turpis ut ante gravida, in molestie eros lobortis.
+$$
+\begin{eqnarray}
+P (x) = \delta \left(m - \dfrac{M}{N}\right) 
+\end{eqnarray}
+$$
 
-Fusce a hendrerit velit. Duis ultricies purus a eleifend posuere. Nulla non massa eros. Suspendisse facilisis nunc sit amet euismod dictum. Cras faucibus urna et metus commodo ultricies. Proin pharetra, lectus eget ultrices consequat, risus ante dapibus lacus, sed facilisis felis neque ac tellus. Cras vehicula enim id enim faucibus mollis. Mauris turpis ex, laoreet molestie porta elementum, rhoncus a dui. Nunc congue purus et nisl viverra, in volutpat dolor aliquet. Quisque imperdiet a nibh eget rhoncus. Donec facilisis aliquam magna, ac blandit nisl posuere sit amet. Ut congue leo a leo placerat imperdiet. Fusce consectetur magna sem, et iaculis augue facilisis vel. Quisque nec ipsum fermentum, suscipit turpis quis, rutrum massa.
+After having defined the type of transaction in the system, two agents are chosen random (one winner and one loser), and money $\Delta m \geq 0$ is transferred from one to the other, as long as the amount to be exchanged is less than the loser's money.
 
-Nullam lacinia eros eu lectus efficitur euismod. Phasellus ac urna ligula. Curabitur a massa volutpat, convallis velit ut, varius nunc. Ut venenatis pellentesque nulla, luctus accumsan eros suscipit vitae. Proin odio neque, hendrerit cursus mattis ut, aliquet ut nulla. Nulla facilisi. Donec tempus rutrum libero vel cursus.
+Otherwise, the transaction does not take place and another pair of agents is chosen. If this procedure is performed many times, the system goes through different distributions until reaching the equilibrium distribution. Likewise, the entropy in the system increases over time until reaching a saturation point.
 
-Vivamus ut varius enim, ac iaculis velit. Vestibulum lectus mauris, efficitur quis cursus mollis, ullamcorper vitae massa. Mauris feugiat ultricies nisi, et tempus mauris placerat tempor. Pellentesque maximus lacus ante. Phasellus laoreet leo ac egestas vulputate. Duis iaculis sapien in nunc imperdiet consectetur. Duis et dui lacinia, fermentum arcu sed, interdum diam. Proin id tempus magna. Aliquam elementum venenatis risus id condimentum. Maecenas augue turpis, imperdiet eget mauris eget, aliquam euismod ipsum. Nullam in faucibus justo. Donec sed nibh volutpat, vulputate diam a, finibus quam.
+<div style="text-align: center;">
+    <img src="{{ "/images/day1.png" | relative_url }}" alt="Descripción de la imagen" style="max-width: 100%; height: auto;">
+    <p style="font-style: italic;"> Stationary probability distribution over money P (m) [1]</p>
+</div>
+
+
+This model follows three exchange rules, in the first the entropy grows slowly since a fixed amount of money is exchanged; In the second, a random fraction of the average money of the pair of agents involved in the transaction is exchanged, and in the third, the agents exchange a random amount of the average money of the system, adjusting in each case to a distribution Boltzmann-Gibbs
+
+## Bibliography
+<a id="bibliography"></a>
+
+1. A. Dragulescu and V. M. Yakovenko. Statistical mechanics of money. European Physical	Journal B, 17(4):723–729, 2000
