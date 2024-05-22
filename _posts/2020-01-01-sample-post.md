@@ -27,10 +27,8 @@ After having defined the type of transaction in the system, two agents are chose
 
 Otherwise, the transaction does not take place and another pair of agents is chosen. If this procedure is performed many times, the system goes through different distributions until reaching the equilibrium distribution. Likewise, the entropy in the system increases over time until reaching a saturation point.
 
-![Image]({{ site.baseurl }}/images/day1.png)
-
 <div style="text-align: center;">
-    <img src="{{ site.baseurl }}/images/day1.png" alt=" Stationary probability distribution over money P (m)" style="max-width: 100%; height: auto;">
+    <img src="../images/day1.png" alt=" Stationary probability distribution over money P (m)" style="max-width: 100%; height: auto;">
     <p style="font-style: italic;"> Stationary probability distribution over money P (m) [1]</p>
 </div>
 
