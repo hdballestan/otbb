@@ -17,10 +17,10 @@ courses:
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-- {icon: 'github', link: 'https://github.com/'}
-- {icon: 'twitter', link: 'https://twitter.com/'}
-- {icon: 'instagram', link: 'https://instagram.com/'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/'}
+- {icon: 'github', link: 'https://github.com/hdballestan'}
+# - {icon: 'twitter', link: 'https://twitter.com/'}
+# - {icon: 'instagram', link: 'https://instagram.com/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/hever-ballesta-6227b7199/'}
 
 contacts:
 - {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
